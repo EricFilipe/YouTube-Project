@@ -49,7 +49,7 @@ export const UserStorage = ({children}: any) => {
     const handleSignUp = (name: string, email: string, password: string) => {
         api.post('/user/sign-up', {name, email, password}).then(() => {
             alert('Usuário cadastrado com sucesso')
-            handleLogin(email, password);
+            // handleLogin(email, password);
             navigate('/')
         }).catch((error) => {
             console.log('Não foi possível fazer o cadastro', error)
