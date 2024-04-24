@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'https://api-youtube-project.onrender.com',
+    baseURL: '*',
     headers: {
-        'Access-Control-Allow-Origin': 'https://api-youtube-project.onrender.com',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     }
 })
